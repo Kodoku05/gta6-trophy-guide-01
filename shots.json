@@ -1,5 +1,6 @@
 [
-  { "file": "1-checklist.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "2-silver.jpg", "path": "/", "grade": "silver", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "3-bronze.jpg", "path": "/", "grade": "bronze", "scroll": 1400, "viewport": { "width": 1280, "height": 800 } }
+  { "file": "1-cover.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 }, "shows": "Progress, search and filters above the checklist, with the platinum guide and its PowerPyx citation open." },
+  { "file": "2-roadmap.jpg", "path": "/#roadmap", "viewport": { "width": 1280, "height": 800 }, "shows": "All six roadmap stages, their trophy links, and the Chapter 1 meditation safeguard." },
+  { "file": "3-spoiler.jpg", "path": "/#filter=story&spoiler=1", "viewport": { "width": 1280, "height": 800 }, "shows": "Story filter with spoiler mode enabled; unearned story names and descriptions are replaced by hidden labels." },
+  { "file": "4-missable.jpg", "path": "/#filter=missable&spoiler=0", "viewport": { "width": 1280, "height": 900 }, "shows": "The potentially missable meditation trophy, its safeguard guide, and linked sources." }
 ]
