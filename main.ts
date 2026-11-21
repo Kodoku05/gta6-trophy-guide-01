@@ -1,13 +1,13 @@
-// Leonida Field Guide submission builder (Node 22 or newer).
-// The browser app lives in app/ and reads its trophy database locally.
-// Copy that app and the supplied screenshots into the output directory,
-// then generate dossier.json with the bundled make.fun dossier writer.
-// Keep the vendor implementation intact so its output matches the scorer.
-// shots.json documents the four screenshot views included with this entry.
+// Package the Leonida Field Guide with Node 22+.
+// app/ contains the static interface and its local trophy database.
+// The build stages those files and the supplied screenshot set together,
+// then asks the bundled make.fun writer to assemble dossier.json.
+// Preserve the vendor writer so the package follows the scorer's format.
+// See shots.json for the four captured routes and their viewport sizes.
 //
-// Preview: node serve.ts, then visit http://localhost:8080.
-// Build locally: MAKEFUN_OUTPUT_DIR=out node main.ts.
-// Without that override, the submission is written to /output.
+// To preview, run node serve.ts and open http://localhost:8080.
+// To package here, run MAKEFUN_OUTPUT_DIR=out node main.ts.
+// The destination falls back to /output when no override is supplied.
 
 import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';

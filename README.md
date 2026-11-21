@@ -1,19 +1,21 @@
 # Leonida Field Guide
 
-A static Grand Theft Auto VI guide for all 55 PlayStation 5 trophies. Each entry includes earning advice, a source link and a place in the six-stage platinum roadmap. The checklist saves progress in your browser and supports JSON progress import and export, search, trophy filters and a switch for hiding story spoilers. The early meditation opportunity is flagged as a precaution against a potentially missable trophy.
+Plan a Grand Theft Auto VI platinum run with this static checklist for all 55 PlayStation 5 trophies. Trophy cards contain original earning advice, public references and a suggested place in a six-stage roadmap. Search and category or grade filters help narrow the list, while a spoiler switch conceals unearned story names and descriptions. Browser storage remembers earned trophies, and JSON import and export let you move that progress between browsers.
 
-Start the local server from the repository directory:
+The roadmap highlights Lucia's optional Chapter 1 meditation as a precaution: whether that early session is required remains unconfirmed, so take it before advancing.
+
+Run the preview server from this directory:
 
 ```sh
 node serve.ts
 ```
 
-Open http://localhost:8080. The app loads its scripts, styles and trophy data locally, so browsing the guide does not require external services. Source links open external reference pages when selected.
+Visit http://localhost:8080 in a browser. The page reads its JavaScript, CSS and trophy JSON from the local server. Normal checklist use needs no external service; following a reference opens a public website.
 
-Create the submission output with:
+Build the submission package with:
 
 ```sh
 MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-This copies the static app and the four supplied screenshots into `out/` and generates `out/dossier.json`. `shots.json` describes the route, viewport and subject of each screenshot. The build uses the supplied vendored dossier writer.
+The builder places the app and four supplied screenshots in `out/`, then creates `out/dossier.json` using the bundled vendor writer. Screenshot routes, viewport sizes and descriptions are recorded in `shots.json`. Node 22 or newer is required by the builder; setting `MAKEFUN_OUTPUT_DIR` selects the destination instead of its default `/output`.

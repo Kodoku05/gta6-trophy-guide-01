@@ -1,6 +1,38 @@
 [
-  {"file":"1-cover.jpg","path":"/","viewport":{"width":1280,"height":800},"shows":"The opening checklist view with completion totals, search tools, trophy filters and an expanded platinum guide with its source link."},
-  {"file":"2-roadmap.jpg","path":"/#roadmap","viewport":{"width":1280,"height":800},"shows":"The six-part platinum route, including linked trophies and the reminder to safeguard the early meditation opportunity."},
-  {"file":"3-spoiler.jpg","path":"/#filter=story&spoiler=1","viewport":{"width":1280,"height":800},"shows":"The story-only checklist with spoiler protection enabled, concealing unearned story titles and descriptions."},
-  {"file":"4-missable.jpg","path":"/#filter=missable&spoiler=0","viewport":{"width":1280,"height":900},"shows":"The missable filter isolates the meditation warning, with the Chapter 1 instructions and supporting source available to read."}
+  {
+    "file": "1-cover.jpg",
+    "path": "/",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "shows": "The landing page brings together the earned total, searchable trophy checklist, category controls and open platinum advice with references."
+  },
+  {
+    "file": "2-roadmap.jpg",
+    "path": "/#roadmap",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "shows": "Six route cards organize the platinum journey, with trophy shortcuts and an early reminder to protect Lucia's Chapter 1 meditation opportunity."
+  },
+  {
+    "file": "3-spoiler.jpg",
+    "path": "/#filter=story&spoiler=1",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "shows": "The story category is selected and spoiler protection replaces the names and descriptions of story trophies still to be earned."
+  },
+  {
+    "file": "4-missable.jpg",
+    "path": "/#filter=missable&spoiler=0",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "shows": "The missable category focuses attention on the meditation precaution, showing the warning, early-game instructions and reference links."
+  }
 ]

@@ -146,6 +146,7 @@ h2 { margin: 0; font: 32px/1.08 var(--display); letter-spacing: -.025em; }
 .footer a { color: var(--coral); text-decoration: none; }
 @media (min-width: 1200px) { .hero { padding-top: 49px; padding-bottom: 45px; } }
 @media (max-width: 980px) { .toolbar { flex-wrap: wrap; } .search-box { flex-basis: 45%; } .file-actions { margin-left: 0; } .roadmap-grid { grid-template-columns: repeat(2, 1fr); } }
+/* Stack the route and progress panels when the viewport becomes narrow. */
 @media (max-width: 680px) {
   .mast-inner, .page-shell { width: min(100% - 32px, 560px); }
   .masthead { height: 60px; }

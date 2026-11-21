@@ -1,3 +1,4 @@
+// Keep this key stable so a refreshed guide retains the browser's earned IDs.
 const STORAGE_KEY = 'leonida-field-guide-progress-v1';
 const DATA_PATH = 'data/trophies.json';
 const STAGES = [

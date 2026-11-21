@@ -1,2 +1,3 @@
 # Generated local submission output; rebuild it with main.ts.
+# Track the source inputs while keeping the default local build out of commits.
 out/
