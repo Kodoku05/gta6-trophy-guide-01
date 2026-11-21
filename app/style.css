@@ -22,6 +22,7 @@ body { margin: 0; background: radial-gradient(ellipse at 81% -14%, rgba(91, 58, 
 a { color: inherit; }
 button, input, select { font: inherit; }
 button, a, input, select, summary { -webkit-tap-highlight-color: transparent; }
+/* Keep keyboard focus visible against the dark panels. */
 :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 .masthead { height: 72px; border-bottom: 1px solid var(--line); background: rgba(16, 16, 28, .72); }
 .mast-inner, .page-shell { width: min(1160px, calc(100% - 64px)); margin-inline: auto; }

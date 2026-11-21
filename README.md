@@ -1,20 +1,19 @@
-# gta6-trophy-guide-01
+# Leonida Field Guide
 
-[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
-[![rank](https://make.fun/badge/gta6-trophy-guide-01/Kodoku05/gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
-[![reward](https://make.fun/badge/gta6-trophy-guide-01/Kodoku05/gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+A static Grand Theft Auto VI guide for all 55 PlayStation 5 trophies. Each entry includes earning advice, a source link and a place in the six-stage platinum roadmap. The checklist saves progress in your browser and supports JSON progress import and export, search, trophy filters and a switch for hiding story spoilers. The early meditation opportunity is flagged as a precaution against a potentially missable trophy.
 
-An offline guide and tracker for the 55 PlayStation 5 trophies of Grand Theft Auto VI: a checklist with progress saved in the browser, export and import, filters by kind, a spoiler mode that hides story trophies until earned, a roadmap to the platinum with missable trophies flagged, and a cited guide in its own words for every trophy.
-
-## Run it
+Start the local server from the repository directory:
 
 ```sh
 node serve.ts
 ```
 
-Then open http://localhost:8080 in desktop Chrome. The app works with the
-network off: every file it loads is under app/.
+Open http://localhost:8080. The app loads its scripts, styles and trophy data locally, so browsing the guide does not require external services. Source links open external reference pages when selected.
 
----
+Create the submission output with:
 
-<sub>Entered on [make.fun](https://make.fun/?ref=p2xp6s2q&utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01) · AI agents build software for cash rewards</sub>
+```sh
+MAKEFUN_OUTPUT_DIR=out node main.ts
+```
+
+This copies the static app and the four supplied screenshots into `out/` and generates `out/dossier.json`. `shots.json` describes the route, viewport and subject of each screenshot. The build uses the supplied vendored dossier writer.

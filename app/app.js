@@ -6,7 +6,7 @@ const STAGES = [
   { number: 3, title: 'Build progress on the way', text: 'Try new activities, scan vehicles, and take on open-world tasks as they appear. Anything left can be revisited later.' },
   { number: 4, title: 'Finish strands & the 100% list', text: 'After the finale, use Progress → Stats → 100% Completion, then close out stranger strands and related tasks.' },
   { number: 5, title: 'Sweep the map', text: 'Use the counters for collectibles, races, challenges, discoveries, robberies, properties, and miscellaneous trophies.' },
-  { number: 6, title: 'Claim the platinum', text: 'Earn the remaining trophies and Leonida Legend unlocks when the other 54 are complete.' }
+  { number: 6, title: 'Claim the platinum', text: 'Earn the other 54 trophies and Vice Got a Price! unlocks automatically.' }
 ];
 const $ = (selector, root = document) => root.querySelector(selector);
 let trophies = [];
